@@ -1,0 +1,172 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<br>
+<br>
+<center>
+    <h2>ข้อมูลติดต่อ บริษัท ไอโซแคร์ ซิสเตมส์ จำกัด</h2>
+</center>
+<figure role="presentation" align="center" class="article-banner-image-wrapper" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+    <div class="article-banner-slate"><img src="~/Content/img/mapisocare.png" itemprop="contentUrl"></div>
+</figure>
+<style>
+      h1{
+          color: red;
+          font-family: verdana;
+          font-size: 200%;
+      }
+
+			input[type=submit] {
+	    width: 10%;
+	    background-color: #4CAF50;
+	    color: white;
+	    padding: 14px 20px;
+	    margin: 8px 0;
+	    border: none;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+
+input[type=text] {
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+
+html { height: 100% }
+body {
+    height:100%;
+    margin:0;padding:0;
+    font-family:tahoma, "Microsoft Sans Serif", sans-serif, Verdana;
+    font-size:12px;
+}
+/* css กำหนดความกว้าง ความสูงของแผนที่ */
+#map_canvas {
+    width:550px;
+    height:400px;
+    margin:auto;
+/*  margin-top:100px;*/
+}
+    </style>
+<body>
+  
+    <center>
+        <p><span style="color: #800000;"><strong>ที่อยู่บริษัท:</strong></span></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; 55/127 ถนน กำแพงเพชร 2 แขวงลาดยาว เขตจตุจักร กทม. 10900</p>
+        <p><span style="color: #800000;"><strong>ติดต่อทาง เบอร์โทรศัพท์:</strong></span></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; 0-2158-1223, 0-2158-1224,0-2158127, 081-355-2557</p>
+        <p><span style="color: #800000;"><strong>แฟ็กซ์:</strong></span></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0-2158-1223,0-2158-1224, 0-2158-1275 #17</p>
+        <p><span style="color: #800000;"><strong>ติดต่อแจ้งปัญหาเกี่ยวกับ</strong></span></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;software และ hardware:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp; Tel.&nbsp; 081-355-2557</p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mail&nbsp; <span id="cloak47403"><a href="mailto:isc.support@icoopmail.com">isc.support@icoopmail.com</a></span>
+            
+            </center>
+                <script type="text/javascript">
+                //<!--
+                document.getElementById('cloak47403').innerHTML = '';
+                var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                var path = 'hr' + 'ef' + '=';
+                var addy47403 = '&#105;sc.s&#117;pp&#111;rt' + '&#64;';
+                addy47403 = addy47403 + '&#105;c&#111;&#111;pm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+                var addy_text47403 = '&#105;sc.s&#117;pp&#111;rt' + '&#64;' + '&#105;c&#111;&#111;pm&#97;&#105;l' + '&#46;' + 'c&#111;m';
+                document.getElementById('cloak47403').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy47403 + '\'>' + addy_text47403 + '<\/a>';
+                //-->
+                </script>
+
+
+</p>
+        <p>&nbsp;</p>
+        <center>
+            <p>&nbsp;<span style="font-size: 12pt; background-color: #ffffff; color: #ff0000;"><strong> แผนที่ &nbsp; <span style="color: #000000; font-size: 10pt;">อยู่หมู่บ้านกลางเมือง : ปาริส&nbsp; ใกล้วัดเสมียนนารี</span></strong></span></p>
+            <div id="map_canvas"></div>
+            <div id="showDD" style="margin:auto;padding-top:5px;width:550px;">
+            </div>
+        </center>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            var map; // กำหนดตัวแปร map ไว้ด้านนอกฟังก์ชัน เพื่อให้สามารถเรียกใช้งาน จากส่วนอื่นได้
+            var GGM; // กำหนดตัวแปร GGM ไว้เก็บ google.maps Object จะได้เรียกใช้งานได้ง่ายขึ้น
+            var my_Marker;  // กำหนดตัวแปร my_Marker สำหรับ Marker Object
+            var infowindow; // กำหนดตัวแปร infowindow สำหรับ infowindow Object
+            function initialize(x, y) { // ฟังก์ชันแสดงแผนที่
+                var a = "13.81";
+                var b = "100.54";
+                console.log(a);
+                console.log(b);
+                GGM = new Object(google.maps); // เก็บตัวแปร google.maps Object ไว้ในตัวแปร GGM
+                // กำหนดจุดเริ่มต้นของแผนที่
+                var my_Latlng = new GGM.LatLng(a, b);
+                var my_mapTypeId = GGM.MapTypeId.ROADMAP; // กำหนดรูปแบบแผนที่ที่แสดง
+                // กำหนด DOM object ที่จะเอาแผนที่ไปแสดง ที่นี้คือ div id=map_canvas
+                var my_DivObj = $("#map_canvas")[0];
+                // กำหนด Option ของแผนที่
+                var myOptions = {
+                    zoom: 8, // กำหนดขนาดการ zoom
+                    center: my_Latlng, // กำหนดจุดกึ่งกลาง
+                    mapTypeId: my_mapTypeId // กำหนดรูปแบบแผนที่
+                };
+                map = new GGM.Map(my_DivObj, myOptions);// สร้างแผนที่และเก็บตัวแปรไว้ในชื่อ map
+
+                // ดึงค่าข้อมูลจากฟอร์ม ที่ระบุ lat และ lon มาไว้ในตัวแปร
+                var latVal = $("#lat_value").val();
+                var lonVal = $("#lon_value").val();
+
+                // สร้างตำแหน่ง จากค่า lat และ lon
+                var markerLatLng = new GGM.LatLng(latVal, lonVal);
+                if (!markerLatLng.lat()) { // ถ้าไม่มีค่าตำแหน่ง
+                    markerLatLng = my_Latlng; // ให้ใช้ค่าเดิมที่เป็นค่าเริ่มต้นด้านบน
+                }
+                map.panTo(markerLatLng); // เลื่อนไปยังตำแหน่ง marker
+                my_Marker = new GGM.Marker({ // สร้างตัว marker
+                    position: markerLatLng,  // กำหนดคำแหน่ง marker
+                    map: map, // กำหนดว่า marker นี้ใช้กับแผนที่ชื่อ instance ว่า map
+                    title: "ตำแหน่ง ที่อยู่ บริษัท ไอโซแคร์ ซิสเต็มส์" // แสดง title เมื่อเอาเมาส์มาอยู่เหนือ
+                });
+
+                // กำหนดค่าให้ตัวแปร infowindow
+                infowindow = new GGM.InfoWindow({
+                    content: "55/127 ถนน กำแพงเพชร 2 แขวงลาดยาว เขตจตุจักร กทม. 10900" // เนื้อหาที่จะแสดงใน inforwindow
+                });
+
+                // ส่วนของการกำหนด ให้เมื่อคลิกแต่ละ marker
+                GGM.event.addListener(my_Marker, "click", function () { // เมื่อคลิกตัว marker แต่ละตัว
+                    infowindow.open(map, my_Marker); // แสดง infowindow ของตัว marker ที่คลิก
+                });
+            }
+
+            $(function () {
+                // โหลด สคริป google map api เมื่อเว็บโหลดเรียบร้อยแล้ว
+                // ค่าตัวแปร ที่ส่งไปในไฟล์ google map api
+                // v=3.2&sensor=false&language=th&callback=initialize
+                //  v เวอร์ชัน่ 3.2
+                //  sensor กำหนดให้สามารถแสดงตำแหน่งทำเปิดแผนที่อยู่ได้ เหมาะสำหรับมือถือ ปกติใช้ false
+                //  language ภาษา th ,en เป็นต้น
+                //  callback ให้เรียกใช้ฟังก์ชันแสดง แผนที่ initialize
+                $("<script/>", {
+                    "type": "text/javascript",
+                    src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyD832XlzsepLQq94BHI0BmK3xbznuyYe5I&callback=initialize"
+                }).appendTo("body");
+            });
+
+
+
+
+        </script>
+</body>
+
+
+
+

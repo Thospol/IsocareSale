@@ -1,0 +1,152 @@
+﻿@model IEnumerable<Salecoop.Models.salecoop>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>ข้อมูลการซื้อขาย</h2>
+
+<div class="col-md-12" style="margin-top:15px">
+    @using (Html.BeginForm("Index", "salecoops", FormMethod.Get, new { @class = "form-inline" }))
+    {
+        <p>
+
+            <div class="form-group">
+                <label class="sr-only"> ค้นหาโดย:</label>
+                <h4 class="form-control-static" style="margin-right:10px">ค้นหาโดย:</h4>
+            </div>
+            @{
+                List<SelectListItem> listItems = new List<SelectListItem>();
+                listItems.Add(new SelectListItem
+                {
+                    Text = "เลขที่ใบเสนอราคา",
+                    Value = "1"
+                });
+                listItems.Add(new SelectListItem
+                {
+                    Text = "ชื่อสหกรณ์",
+                    Value = "2",
+                    Selected = true
+                });
+                listItems.Add(new SelectListItem
+                {
+                    Text = "สถานะ",
+                    Value = "3",
+                    Selected = true
+                });
+
+            }
+            <div class="form-group">
+                @Html.DropDownList("movieGenre", new SelectList(listItems, "Value", "Text"), new { @class = "form-control", @style = "margin-top:15px" })
+
+            </div>
+            <div class="form-group">
+                @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "ค้นหา", @style = "margin-top:15px" })
+
+            </div>
+            <input type="submit" value="ค้นหา" class="btn btn-success" style="margin-left:10px; margin-top:15px" />
+        </p>
+                }
+    <button class="btn btn-primary" style="margin-left:5px" onclick="location.href='@Url.Action("Create", "salecoops")'">
+        <i class="glyphicon glyphicon-plus"> </i>
+        <label>สร้างการซื้อขายใหม่</label>
+    </button>
+</div>
+<br>
+<table class="table">
+    <tr>
+        
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-list-alt"> </i>
+                @Html.DisplayName("เลขที่ใบเสนอราคา")
+                </center>
+</th>
+        
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-calendar"> </i>
+                @Html.DisplayName("วันที่")
+                </center>
+</th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-user"> </i>
+                @Html.DisplayName("ผู้เสนอราคา")
+                </center>
+</th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-th-list"> </i>
+                @Html.DisplayName("รายการ")
+                </center>
+        <th>
+            <center>
+            <i class="glyphicon glyphicon-pencil"> </i>
+            @Html.DisplayName("จำนวน")
+            </center>
+            </th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-alert"> </i>
+                @Html.DisplayName("สถานะ")
+                </center>
+</th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-wrench"> </i>
+                @Html.DisplayName("จัดการข้อมูล")
+                </center>
+</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <center>
+                @Html.DisplayFor(modelItem => item.quotationNo)
+                </center>
+</td>
+        <td>
+            <center>
+                @Html.DisplayFor(modelItem => item.dayindate)
+                </center>
+</td>
+        <td>
+            <center>
+                @Html.DisplayFor(modelItem => item.useroffer)
+                </center>
+</td>
+        <td>
+            <center>
+                @Html.DisplayFor(modelItem => item.listorder)
+                </center>
+</td>
+        <td>
+            <center>
+                @Html.DisplayFor(modelItem => item.amount)
+                </center>
+</td>
+      
+        <td>
+            <center>
+                @Html.DisplayFor(modelItem => item.status)
+                </center>
+</td>
+        <td>
+            <button class="btn btn-warning" onclick="location.href='@Url.Action("Edit","salecoops",new { id = item.idsale})'">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </button>
+            <button class="btn btn-success" style="margin-left:5px" onclick="location.href='@Url.Action("Details","salecoops",new { id = item.idsale })'">
+                <span class="glyphicon glyphicon-list-alt"></span>
+            </button>
+
+            <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Delete","salecoops",new { id = item.idsale })'">
+                <span class="glyphicon glyphicon-trash"></span>
+            </button>
+        </td>
+    </tr>
+}
+
+</table>

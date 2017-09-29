@@ -1,0 +1,135 @@
+﻿@model Salecoop.Models.salecoop
+
+@{
+    ViewBag.Title = "Delete";
+}
+<br>
+<br>
+<h2>ลบรายละเอียดการซื้อขาย</h2>
+
+<h3>คุณต้องการลบรายการนี้จริงหรือไม่ ?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <i class="glyphicon glyphicon-list-alt"> </i>
+            @Html.DisplayName("เลขที่ใบเสนอราคา")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quotationNo)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-calendar"> </i>
+            @Html.DisplayName("วันที่")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dayindate)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-user"> </i>
+            @Html.DisplayName("ผู้เสนอราคา")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.useroffer)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-home"> </i>
+            @Html.DisplayName("ชื่อสหกรณ์")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coopName)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-tasks"> </i>
+            @Html.DisplayName("ลำดับ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sequence)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-th-list"> </i>
+            @Html.DisplayName("รายการ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.listorder)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-pencil"> </i>
+            @Html.DisplayName("จำนวน")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-usd"> </i>
+            @Html.DisplayName("ราคาขาย(รวมVAT)")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salepricesumvat)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-usd"> </i>
+            @Html.DisplayName("ต้นทุน(รวมVAT)")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costsumvat)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-usd"> </i>
+            @Html.DisplayName("กำไรเบื้องต้น")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.profitaftersale)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-alert"> </i>
+            @Html.DisplayName("สถานะ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="ลบ" class="btn btn-success" />
+
+            </div>
+        </div>
+
+        
+    }
+</div>
+<div>
+    <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Index","salecoops")'">
+        ย้อนกลับ
+        <span class="glyphicon glyphicon-backward"></span>
+    </button>
+</div>
+

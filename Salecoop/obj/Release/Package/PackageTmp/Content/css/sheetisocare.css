@@ -1,0 +1,58 @@
+ body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        a {
+            color: #c0392b;
+        }
+
+        .navbar-default .navbar-brand {
+            color: rgba(179, 68, 68, 1);
+        }
+
+        .navbar-default .navbar-brand {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .navbar-default {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            background-color: red;
+            border-width: 0px;
+        }
+
+            .navbar-default .navbar-nav > li > a {
+                color: rgba(255, 255, 255, 1);
+                background-color: red;
+            }
+
+                .navbar-default .navbar-nav > li > a:hover,
+                .navbar-default .navbar-nav > li > a:focus {
+                    color: rgba(255, 255, 255, 1);
+                    background-color: rgba(25, 160, 148, 1);
+                }
+
+            .navbar-default .navbar-nav > .active > a,
+            .navbar-default .navbar-nav > .active > a:hover,
+            .navbar-default .navbar-nav > .active > a:focus {
+                color: rgba(255, 255, 255, 1);
+                background-color: rgba(25, 160, 148, 1);
+            }
+
+            .navbar-default .navbar-toggle {
+                border-color: #19a094;
+            }
+
+                .navbar-default .navbar-toggle:hover,
+                .navbar-default .navbar-toggle:focus {
+                    background-color: #19a094;
+                }
+
+                .navbar-default .navbar-toggle .icon-bar {
+                    background-color: #19a094;
+                }
+
+                .navbar-default .navbar-toggle:hover .icon-bar,
+                .navbar-default .navbar-toggle:focus .icon-bar {
+                    background-color: #009688;
+                }

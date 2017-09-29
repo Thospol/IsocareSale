@@ -1,0 +1,168 @@
+﻿@model Salecoop.Models.salecoop
+
+@{
+    ViewBag.Title = "Edit";
+}
+<br>
+<br>
+<h2>แก้ไขรายการซื้อขาย</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.idsale)
+
+        <div class="form-group">
+            @Html.Label("เลขที่ใบเสนอราคา", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.quotationNo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.quotationNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("วันที่", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.dayindate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.dayindate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("ผู้เสนอราคา", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.useroffer, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.useroffer, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+           @Html.Label("ชื่อสหกรณ์", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.coopName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.coopName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("ลำดับ", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.sequence, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.sequence, "", new { @class = "text-danger" })
+            </div>
+        </div>
+       
+            <div class="form-group">
+        
+
+                   @Html.Label("รายการ", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.listorder, new { htmlAttributes = new { @class = "form-control" } })
+         
+                        @Html.ValidationMessageFor(model => model.listorder, "", new { @class = "text-danger" })
+                    </div>
+</div>
+
+        <div class="form-group">
+            @Html.Label("จำนวน", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.amount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.amount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("ราคาขาย(รวมVAT)", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.salepricesumvat, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.salepricesumvat, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("ต้นทุน(รวมVAT)", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.costsumvat, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.costsumvat, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("กำไร", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.profitaftersale, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.profitaftersale, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("สถานะ", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               @{
+                   List<SelectListItem> listItems = new List<SelectListItem>();
+                   listItems.Add(new SelectListItem
+                   {
+                       Text = "ไม่อนุมัติสั่งซื้อ",
+                       Value = "ไม่อนุมัติสั่งซื้อ",
+                       Selected = true
+
+                   });
+                   listItems.Add(new SelectListItem
+                   {
+                       Text = "อนุมัติสั่งซื้อ",
+                       Value = "อนุมัติสั่งซื้อ"
+                   });
+                   listItems.Add(new SelectListItem
+                   {
+                       Text = "รอสั่งสินค้า",
+                       Value = "รอสั่งสินค้า"
+
+                   });
+                   listItems.Add(new SelectListItem
+                   {
+                       Text = "ได้รับสินค้าแล้ว",
+                       Value = "ได้รับสินค้าเรียบร้อย"
+
+                   });
+                   listItems.Add(new SelectListItem
+                   {
+                       Text = "รอรับเงิน",
+                       Value = "รอรับเงิน"
+
+                   });
+
+                   listItems.Add(new SelectListItem
+                   {
+                       Text = "ได้รับเงินเรียบร้อย",
+                       Value = "ได้รับเงินเรียบร้อย"
+
+                   });
+
+            }
+    @Html.DropDownListFor(model => model.status, listItems, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="บันทึก" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Index","salecoops")'">
+        ย้อนกลับ
+        <span class="glyphicon glyphicon-backward"></span>
+    </button>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

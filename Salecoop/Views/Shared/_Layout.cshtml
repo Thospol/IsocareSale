@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <title>@ViewBag.Title - การซื้อขาย โปรแกรมสหกรณ์ - ไอโซแคร์ซิสเต็มส์ จำกัด </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                    <img class="pull-left" src="~/Content/isocare2.png" style="width:35px; margin-right:10px; margin-top:5px" />
+                    @Html.ActionLink("การซื้อขาย - สหกรณ์ออมทรัพย์", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            
+                </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @if (Session["UserName"] != null) { 
+                    <li>@Html.ActionLink("เพิ่มการซื้อขาย", "Create", "salecoops")</li>
+                    <li>@Html.ActionLink("รายการซื้อขาย", "Index", "salecoops")</li>
+                    <li>@Html.ActionLink("ซื้อขายด้านราคา", "Saleprice", "salecoops")</li>
+                    <li>@Html.ActionLink("ตรวจสอบพนักงาน", "Index", "Employees")</li>
+                    }
+                    else {
+                    <li>@Html.ActionLink("หน้าหลัก", "Index", "Home")</li>
+                    <li>@Html.ActionLink("เกี่ยวกับ", "About", "Home")</li>
+                    <li>@Html.ActionLink("ติดต่อ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("รายการขาย", "ViewSale", "salecoops")</li>
+                    }
+                </ul>
+                <ul class="nav navbar-nav navbar-right ">
+
+                    @if (Session["UserName"] != null && Session["Firstname"] != null && Session["Lastname"] != null)
+                    {
+                        <li>@Html.ActionLink("ยินดีต้อนรับ คุณ " + @Session["Firstname"].ToString() +" "+ @Session["Lastname"].ToString(), "Index", "Home") 
+                        </li>
+                        <li><button class="btn btn-success" style="height:50px" onclick="location.href='@Url.Action("Logout","Home")'">ออกจากระบบ</button></li>
+                    }
+                    else
+                    {
+                    <li> <button class="btn btn-success" style="height:50px" onclick="location.href='@Url.Action("Login","Home")'">เข้าสู่ระบบ</button></li>
+                        }
+
+
+</ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now - การซื้อขาย สหกรณ์ออมทรัพย์</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

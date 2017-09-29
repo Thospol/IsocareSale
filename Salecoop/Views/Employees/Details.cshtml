@@ -1,0 +1,92 @@
+﻿@model Salecoop.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+<br>
+<br>
+<h2>รายละเอียดพนักงาน</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <i class="glyphicon glyphicon-user"> </i>
+            @Html.DisplayName("ชื่อจริง")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Firstname)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-user"> </i>
+            @Html.DisplayName("นามสกุล")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lastname)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-user"> </i>
+            @Html.DisplayName("ชื่อผู้ใช้งาน")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-lock"> </i>
+            @Html.DisplayName("รหัสผ่าน")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-credit-card"> </i>
+            @Html.DisplayName("บัตรประชาชน")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idcard)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-envelope"> </i>
+            @Html.DisplayName("อีเมลล์")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-earphone"> </i>
+            @Html.DisplayName("เบอร์โทร")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tel)
+        </dd>
+
+        <dt>
+            <i class="glyphicon glyphicon-education"> </i>
+            @Html.DisplayName("ตำแหน่ง")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Index","Employees")'">
+        ย้อนกลับ
+        <span class="glyphicon glyphicon-backward"></span>
+    </button>
+</div>

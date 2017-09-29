@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+<br>
+<br>
+<br>
+<br>
+<div  align="center" ><img src="~/Content/img/people2.png" alt="Avatar" class="avatar" width="150" height="150"></div>
+
+<div align="center"><h2>ลงชื่อเข้าใช้</h2></div>
+<br>
+<head>
+@ViewBag.Javascript
+ </head>
+<div>
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+
+
+     
+
+
+
+    <div align="center">
+
+        @Html.Label("Username", htmlAttributes: new { @class = "control-label" })
+        @Html.TextBox("username", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "Username", @style = "text-align: center" })
+
+        @Html.Label("Password", htmlAttributes: new { @class = "control-label " })
+        @Html.Password("password", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "Password", @style = "text-align: center" })
+
+        <input type="submit" class="btn btn-success" value="Login" style="margin-top:20px;" />
+        <br>
+        <br>
+        @Html.ActionLink("ยังไม่ได้เป็นสมาชิก ลงทะเบียนเดี่ยวนี้!", "Create", "Employees")
+
+        <span class="text-danger">
+            @if (Session["error"] != null)
+                {
+                @Session["error"].ToString()}
+        </span>
+
+    </div>
+
+
+
+
+                            
+                           
+                                    }
+
+</div>
+
+
+
+
+

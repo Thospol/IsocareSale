@@ -1,0 +1,179 @@
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\ApplicationInsights.config
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\csc.exe
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\System.Collections.Immutable.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\vbc.exe
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\VBCSCompiler.exe
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\roslyn\VBCSCompiler.exe.config
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Salecoop.dll.config
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Salecoop.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Salecoop.pdb
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Antlr3.Runtime.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.Web.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.WindowsServer.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.ApplicationInsights.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.Web.Infrastructure.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Newtonsoft.Json.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Helpers.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Mvc.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Optimization.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Razor.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.WebPages.Deployment.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.WebPages.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.WebPages.Razor.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\WebGrease.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.Web.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.AI.WindowsServer.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.ApplicationInsights.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Helpers.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Mvc.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Optimization.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.Razor.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.WebPages.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.WebPages.Deployment.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\System.Web.WebPages.Razor.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Antlr3.Runtime.pdb
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\Newtonsoft.Json.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\obj\Debug\Salecoop.csprojResolveAssemblyReference.cache
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\obj\Debug\Salecoop.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\obj\Debug\Salecoop.pdb
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\EntityFramework.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\EntityFramework.SqlServer.dll
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\EntityFramework.xml
+c:\users\mpmaster\documents\visual studio 2015\Projects\Salecoop\Salecoop\bin\EntityFramework.SqlServer.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\ApplicationInsights.config
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\csc.exe
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\vbc.exe
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\VBCSCompiler.exe
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Salecoop.dll.config
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Salecoop.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Salecoop.pdb
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Antlr3.Runtime.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\EntityFramework.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\EntityFramework.SqlServer.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.Web.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Newtonsoft.Json.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Helpers.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Mvc.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Optimization.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Razor.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.WebPages.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.WebPages.Razor.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\WebGrease.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\EntityFramework.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\EntityFramework.SqlServer.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.Web.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Helpers.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Mvc.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Optimization.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.Razor.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.WebPages.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\System.Web.WebPages.Razor.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Antlr3.Runtime.pdb
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\bin\Newtonsoft.Json.xml
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\obj\Debug\Salecoop.csprojResolveAssemblyReference.cache
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\obj\Debug\Salecoop.dll
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\obj\Debug\Salecoop.pdb
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\obj\Debug\Salecoop.Migrations.InitialCreate.resources
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\obj\Debug\Salecoop.csproj.GenerateResource.Cache
+C:\Users\MPMASTER\Desktop\Salecoop\Salecoop\obj\Debug\Salecoop.Migrations.InitialCreate1.resources
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\ApplicationInsights.config
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\csc.exe
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\vbc.exe
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\VBCSCompiler.exe
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Salecoop.dll.config
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Salecoop.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Salecoop.pdb
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Antlr3.Runtime.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\EntityFramework.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\EntityFramework.SqlServer.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.Web.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Newtonsoft.Json.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Helpers.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Mvc.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Optimization.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Razor.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.WebPages.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.WebPages.Razor.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\WebGrease.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\EntityFramework.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\EntityFramework.SqlServer.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.Web.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Helpers.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Mvc.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Optimization.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.Razor.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.WebPages.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\System.Web.WebPages.Razor.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Antlr3.Runtime.pdb
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\bin\Newtonsoft.Json.xml
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.Migrations.InitialCreate.resources
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.Migrations.InitialCreate1.resources
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.csproj.GenerateResource.Cache
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.dll
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.pdb
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.Migrations.Initial.resources
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.Migrations.Initial1.resources
+C:\Users\MPMASTER\Desktop\sale28092017\Salecoop\obj\Debug\Salecoop.csprojResolveAssemblyReference.cache

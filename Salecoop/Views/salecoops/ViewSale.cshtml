@@ -1,0 +1,130 @@
+﻿@model IEnumerable<Salecoop.Models.salecoop>
+@{
+    ViewBag.Title = "ViewSale";
+}
+<br>
+<br>
+<h2>ข้อมูลการซื้อขาย</h2>
+
+<div class="col-md-12" style="margin-top:15px">
+    @using (Html.BeginForm("ViewSale", "salecoops", FormMethod.Get, new { @class = "form-inline" }))
+    {
+        <p>
+
+            <div class="form-group">
+                <label class="sr-only"> ค้นหาโดย:</label>
+                <h4 class="form-control-static" style="margin-right:10px">ค้นหาโดย:</h4>
+            </div>
+            @{
+                List<SelectListItem> listItems = new List<SelectListItem>();
+                
+                listItems.Add(new SelectListItem
+                {
+                    Text = "ชื่อสหกรณ์",
+                    Value = "2"
+                });
+                listItems.Add(new SelectListItem
+                {
+                    Text = "รายการ",
+                    Value = "4"
+                });
+                listItems.Add(new SelectListItem
+                {
+                    Text = "สถานะ",
+                    Value = "3"
+                });
+
+            }
+            <div class="form-group">
+                @Html.DropDownList("movieGenre", new SelectList(listItems, "Value", "Text"), new { @class = "form-control", @style = "margin-top:15px" })
+
+            </div>
+            <div class="form-group">
+                @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "ค้นหา", @style = "margin-top:15px" })
+
+            </div>
+            <input type="submit" value="ค้นหา" class="btn btn-success" style="margin-left:10px; margin-top:15px" />
+        </p>
+                }
+</div>
+<br>
+<table class="table">
+    <tr>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-calendar"> </i>
+                @Html.DisplayName("วันที่")
+            </center>
+        </th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-home"> </i>
+                @Html.DisplayName("ชื่อสหกรณ์")
+            </center>
+        </th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-th-list"> </i>
+                @Html.DisplayName("รายการ")
+            </center>
+        </th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-pencil"> </i>
+                @Html.DisplayName("จำนวน")
+            </center>
+        </th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-user"> </i>
+                @Html.DisplayName("ราคาขายรวมภาษี")
+            </center>
+        </th>
+        <th>
+            <center>
+                <i class="glyphicon glyphicon-alert"> </i>
+                @Html.DisplayName("สถานะ")
+            </center>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.dayindate)
+                </center>
+            </td>
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.coopName)
+                </center>
+            </td>
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.listorder)
+                </center>
+            </td>
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.amount)
+                </center>
+            </td>
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.salepricesumvat)
+                </center>
+            </td>
+
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.status)
+                </center>
+            </td>
+           
+        </tr>
+    }
+
+</table>
