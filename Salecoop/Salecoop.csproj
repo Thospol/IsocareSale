@@ -85,6 +85,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.6.4\lib\net40\Rotativa.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -195,6 +199,8 @@
     <Content Include="Content\css\component.css" />
     <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\normalize.css" />
+    <Content Include="Content\img\cashcut.png" />
+    <Content Include="Content\img\isocare2cut.png" />
     <Content Include="Content\img\isocare_slide01.jpg" />
     <Content Include="Content\img\isocare_slide04.jpg" />
     <Content Include="Content\img\isocare_slide106.jpg" />
@@ -209,9 +215,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Rotativa\help-wkhtmltoimage.txt" />
-    <Content Include="Rotativa\help-wkhtmltopdf.txt" />
-    <Content Include="Rotativa\wkhtmltoimage.exe" />
     <Content Include="Rotativa\wkhtmltopdf.exe" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -261,6 +264,7 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Logout.cshtml" />
     <Content Include="Views\salecoops\ViewSale.cshtml" />
+    <Content Include="Views\salecoops\SaleExportToPDF.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709211651122_InitialCreate.resx">

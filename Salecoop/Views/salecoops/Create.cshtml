@@ -25,7 +25,7 @@
         <div class="form-group" align="center">
              <center><i class="glyphicon glyphicon-list-alt"> </i> @Html.Label("เลขที่ใบเสนอราคา")</center>
            
-                @Html.EditorFor(model => model.quotationNo, new { htmlAttributes = new { @class = "form-control", style = "width : 150px" } })
+                @Html.EditorFor(model => model.quotationNo, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.quotationNo, "", new { @class = "text-danger" })
             
         </div>
@@ -33,7 +33,7 @@
         <div class="form-group" align="center">
             <center><i class="glyphicon glyphicon-calendar"> </i> @Html.Label("วันที่")</center>
 
-                @Html.EditorFor(model => model.dayindate, new { htmlAttributes = new { @class = "form-control", style = "width : 100px" } })
+                @Html.EditorFor(model => model.dayindate, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.dayindate, "", new { @class = "text-danger" })
             
         </div>
@@ -41,14 +41,14 @@
         <div class="form-group" align="center">
             <center><i class="glyphicon glyphicon-user"> </i> @Html.Label("ผู้เสนอราคา")</center>
 
-                @Html.EditorFor(model => model.useroffer, new { htmlAttributes = new { @class = "form-control", style = "width : 350px" } })
+                @Html.EditorFor(model => model.useroffer, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.useroffer, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
           <center><i class="glyphicon glyphicon-home"> </i>@Html.Label("ชื่อสหกรณ์")</center>
 
-                @Html.EditorFor(model => model.coopName, new { htmlAttributes = new { @class = "form-control", style = "width : 350px" } })
+                @Html.EditorFor(model => model.coopName, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.coopName, "", new { @class = "text-danger" })
         </div>
 
@@ -56,7 +56,7 @@
 
             <center> <i class="glyphicon glyphicon-th-list"> </i>@Html.Label("ลำดับ") </center>
 
-                @Html.EditorFor(model => model.sequence, new { htmlAttributes = new { @class = "form-control", style = "width : 100px" } })
+                @Html.EditorFor(model => model.sequence, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.sequence, "", new { @class = "text-danger" })
 
         </div>
@@ -64,35 +64,35 @@
         <div class="form-group" align="center">
             <center> <i class="glyphicon glyphicon-th-list"> </i>@Html.Label("รายการ") </center>
 
-                    @Html.EditorFor(model => model.listorder, new { htmlAttributes = new { @class = "form-control", style = "height: 60px; width : 400px;" } })
+                    @Html.EditorFor(model => model.listorder, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                     @Html.ValidationMessageFor(model => model.listorder, "", new { @class = "text-danger" })      
         </div>
 
         <div class="form-group" align="center">
            <center> <i class="glyphicon glyphicon-"> </i>@Html.Label("จำนวน")  <i class="glyphicon glyphicon-pencil"> </i></center>
 
-    @Html.EditorFor(model => model.amount, new { htmlAttributes = new { @class = "form-control", style = "width : 100px" } })
+    @Html.EditorFor(model => model.amount, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
     @Html.ValidationMessageFor(model => model.amount, "", new { @class = "text-danger" })
 </div>
 
         <div class="form-group" align="center">
             <center><i class="glyphicon glyphicon-usd"></i>@Html.Label("ราคาขาย(รวมVAT)")</center>
 
-                @Html.EditorFor(model => model.salepricesumvat, new { htmlAttributes = new { @class = "form-control", style = "width : 200px" } })
+                @Html.EditorFor(model => model.salepricesumvat, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.salepricesumvat, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
            <center><i class="glyphicon glyphicon-usd"></i> @Html.Label("ต้นทุน(รวมVAT)")</center>
 
-                @Html.EditorFor(model => model.costsumvat, new { htmlAttributes = new { @class = "form-control", style = "width : 200px" } })
+                @Html.EditorFor(model => model.costsumvat, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.costsumvat, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
            <center><i class="glyphicon glyphicon-usd"></i> @Html.Label("กำไรเบื้องต้น")</center>
             
-                @Html.EditorFor(model => model.profitaftersale, new { htmlAttributes = new { @class = "form-control", style = "width : 200px" } })
+                @Html.EditorFor(model => model.profitaftersale, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", style = "width : 400px; text-align: center;" } })
                 @Html.ValidationMessageFor(model => model.profitaftersale, "", new { @class = "text-danger" })
         </div>
 
@@ -141,7 +141,7 @@
 
                 }
 
-                @Html.DropDownListFor(model => model.status, listItems, new { @class = "form-control", style = "width : 130px" })
+                @Html.DropDownListFor(model => model.status, listItems, new { @class = "form-control", style = "margin-top:15px; text-align: center;" })
            
         </div>
 

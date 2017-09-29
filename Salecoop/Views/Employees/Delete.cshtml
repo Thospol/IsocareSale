@@ -8,95 +8,77 @@
 <center><h2>ลบข้อมูลพนักงาน</h2></center>
 
 <center><h3>คุณต้องการลบพนักงาน คนนี้จริงหรือ?</h3></center>
-    <div>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                <i class="glyphicon glyphicon-user"> </i>
-                @Html.DisplayName("ชื่อจริง")
-            </dt>
+  
+       
+        <center>
+    <hr />
 
-            <dd>
-                @Html.DisplayFor(model => model.Firstname)
-            </dd>
+    <i class="glyphicon glyphicon-user"> </i>
+    <b>@Html.DisplayName("ชื่อจริง: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Firstname)
+    <br>
 
-            <dt>
-                <i class="glyphicon glyphicon-user"> </i>
-                @Html.DisplayName("นามสกุล")
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Lastname)
-            </dd>
+    <i class="glyphicon glyphicon-user"> </i>
+    <b>@Html.DisplayName("นามสกุล: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Lastname)
+    <br>
 
-            <dt>
-                <i class="glyphicon glyphicon-user"> </i>
-                @Html.DisplayName("ชื่อผู้ใช้งาน")
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Username)
-            </dd>
+    <i class="glyphicon glyphicon-user"> </i>
+    <b>@Html.DisplayName("ชื่อผู้ใช้งาน: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Username)
+    <br>
 
-            <dt>
-                <i class="glyphicon glyphicon-lock"> </i>
-                @Html.DisplayName("รหัสผ่าน")
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Password)
-            </dd>
+    <i class="glyphicon glyphicon-lock"> </i>
+    <b>@Html.DisplayName("รหัสผ่าน: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Password)
+    <br>
 
-            <dt>
-                <i class="glyphicon glyphicon-credit-card"> </i>
-                @Html.DisplayName("บัตรประชาชน")
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Idcard)
-            </dd>
+    <i class="glyphicon glyphicon-credit-card"> </i>
+    <b>@Html.DisplayName("บัตรประชาชน: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Idcard)
+    <br>
 
-            <dt>
-                <i class="glyphicon glyphicon-envelope"> </i>
-                @Html.DisplayName("อีเมลล์")
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Email)
-            </dd>
+    <i class="glyphicon glyphicon-envelope"> </i>
+    <b>@Html.DisplayName("อีเมลล์: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Email)
+    <br>
 
-            <dt>
-                <i class="glyphicon glyphicon-earphone"> </i>
-                @Html.DisplayName("เบอร์โทร")
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Tel)
-            </dd>
+    <i class="glyphicon glyphicon-earphone"> </i>
+    <b>@Html.DisplayName("เบอร์โทร: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Tel)
+    <br>
 
-            <dt>
-                <i class="glyphicon glyphicon-education"> </i>
-                @Html.DisplayName("ตำแหน่ง")
-            </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.Position)
-            </dd>
+    <i class="glyphicon glyphicon-education"> </i>
+    <b>@Html.DisplayName("ตำแหน่ง: ")</b>&nbsp;
+    @Html.DisplayFor(model => model.Position)
 
-        </dl>
 
-        @using (Html.BeginForm())
-        {
-            @Html.AntiForgeryToken()
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="ลบ" class="btn btn-success" />
 
-                </div>
+
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <div>
+                <br>
+                <br>
+                <input type="submit" value="ลบ" class="btn btn-success" />
+
             </div>
+        </div>
 
-        }
-    </div>
+    }
+</center>
+
     <div>
         <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Index","Employees")'">
             ย้อนกลับ

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rotativa;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -174,5 +175,46 @@ namespace Salecoop.Models
 
             return View(sale);
         }
+        public ActionResult SaleExportToPDF(string movieGenre, string searchString)
+        {
+            var sale = from m in db.salecoops select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                if (movieGenre == "1")
+                {
+
+                    sale = sale.Where(s => s.quotationNo.ToString().Contains(searchString));//แก้จาก datetime เป็น String
+                }
+                else if (movieGenre == "2")
+                {
+                    sale = sale.Where(s => s.coopName.Contains(searchString));
+                }
+                else if (movieGenre == "3")
+                {
+                    sale = sale.Where(s => s.status.Contains(searchString));
+                }
+                else if (movieGenre == "4")
+                {
+                    sale = sale.Where(s => s.listorder.Contains(searchString));
+                }
+                else if (movieGenre == "5")
+                {
+                    sale = sale.Where(s => s.dayindate.ToString().Contains(searchString));
+                }
+            }
+
+            return View(sale);
+        }
+        public ActionResult ExportToPDF()
+        {
+
+            return new ActionAsPdf("SaleExportToPDF")
+            {
+                FileName = Server.MapPath("~/Content/ListSales.pdf")
+            
+            };
+        }
+
     }
 }

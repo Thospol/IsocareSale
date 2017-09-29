@@ -50,8 +50,11 @@
                     }
         <button class="btn btn-primary" style="margin-left:5px" onclick="location.href='@Url.Action("Create", "salecoops")'">
             <i class="glyphicon glyphicon-plus"> </i>
-            <label>สร้างการซื้อขายใหม่</label>
+            สร้างการซื้อขายใหม่
         </button>
+       
+            
+        
     </div>
     <br>
     <table class="table">
@@ -150,5 +153,11 @@
                 </td>
             </tr>
         }
-
-    </table>
+        
+       
+        
+</table>
+<button class="btn btn-primary" style="float: right;" onclick="location.href='@Url.Action("SaleExportToPDF","salecoops")'">
+    ไปยังหน้าปริ้นข้อมูลการซื้อขาย
+    <span class="glyphicon glyphicon-menu-right"></span>
+</button>

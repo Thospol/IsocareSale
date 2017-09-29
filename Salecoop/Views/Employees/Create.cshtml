@@ -19,14 +19,14 @@
         <div class="form-group " align="center">
             <i class="glyphicon glyphicon-user"> </i>@Html.Label("ชื่อจริง")
 
-            @Html.EditorFor(model => model.Firstname, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Firstname, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Firstname, "", new { @class = "text-danger" })
 
         </div>
 
         <div class="form-group" align="center">
             <i class="glyphicon glyphicon-user"> </i>@Html.Label("นามสกุล")
-            @Html.EditorFor(model => model.Lastname, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Lastname, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Lastname, "", new { @class = "text-danger" })
 
         </div>
@@ -34,37 +34,37 @@
         <div class="form-group" align="center">
             <i class="glyphicon glyphicon-user"> </i>@Html.Label("ชื่อผู้ใช้งาน")
 
-            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
             <i class="glyphicon glyphicon-lock"> </i>@Html.Label("รหัสผ่าน")
-            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
             <i class="glyphicon glyphicon-credit-card"> </i> @Html.Label("บัตรประชาชน")
-            @Html.EditorFor(model => model.Idcard, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Idcard, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Idcard, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
             <i class="glyphicon glyphicon-envelope"> </i>@Html.Label("อีเมลล์")
-            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
             <i class="glyphicon glyphicon-earphone"> </i>@Html.Label("เบอร์โทร")
-            @Html.EditorFor(model => model.Tel, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Tel, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Tel, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group" align="center">
             <i class="glyphicon glyphicon-education"> </i>@Html.Label("ตำแหน่งงาน")
-            @Html.EditorFor(model => model.Position, new { htmlAttributes = new { @class = "form-control", @style = "width : 250px" } })
+            @Html.EditorFor(model => model.Position, new { htmlAttributes = new { @class = "form-control", @placeholder = "กรุณากรอกข้อมูล...", @style = "width : 400px; text-align : center;" } })
             @Html.ValidationMessageFor(model => model.Position, "", new { @class = "text-danger" })
         </div>
 

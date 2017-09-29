@@ -1,0 +1,161 @@
+﻿@model IEnumerable<Salecoop.Models.salecoop>
+@{
+    Layout = "";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("button").hide();
+    });
+    
+});
+</script> -->
+<div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <button  id="hide" class="btn btn-info" style="float: right;" onclick="location.href='@Url.Action("ExportToPDF","salecoops")'">
+        <span class="glyphicon glyphicon-save"></span>
+    </button>
+</div>
+<div align="center"><img src="~/Content/img/isocare2cut.png" alt="Avatar" class="avatar" width="100" height="100"></div>
+
+    <center><h2>ข้อมูลการซื้อขาย</h2></center>
+  
+
+
+    <table class="table">
+
+        <tr>
+
+            <th width="7%">
+                <center>
+
+                    <i class="glyphicon glyphicon-list-alt"> </i>
+                    @Html.DisplayName("เลขที่")
+                </center>
+            </th>
+
+            <th width="7%">
+                <center>
+                    <i class="glyphicon glyphicon-calendar"> </i>
+                    @Html.DisplayName("วันที่")
+                </center>
+            </th>
+            <th width="7%">
+                <center>
+                    <i class="glyphicon glyphicon-user"> </i>
+                    @Html.DisplayName("ผู้เสนอ")
+                </center>
+            </th>
+            <th width="15%">
+                <center>
+                    <i class="glyphicon glyphicon-home"> </i>
+                    @Html.DisplayName("ชื่อสหกรณ์")
+                </center>
+            </th>
+            <th width="20%">
+                <center>
+                    <i class="glyphicon glyphicon-th-list"> </i>
+                    @Html.DisplayName("รายการ")
+                </center>
+            </th>
+            <th width="3%">
+                <center>
+                    <i class="glyphicon glyphicon-pencil"> </i>
+                    @Html.DisplayName("จำนวน")
+                </center>
+            </th>
+            <th width="13%">
+                <center>
+                    <i class="glyphicon glyphicon-pencil"> </i>
+                    @Html.DisplayName("ราคาขายรวมภาษี")
+                </center>
+            </th>
+            <th width="10%">
+                <center>
+                    <i class="glyphicon glyphicon-pencil"> </i>
+                    @Html.DisplayName("กำไรที่ได้")
+                </center>
+            </th>
+            <th width="9%">
+                <center>
+                    <i class="glyphicon glyphicon-alert"> </i>
+                    @Html.DisplayName("สถานะ")
+                </center>
+            </th>
+            <th width="9%">
+                <center>
+
+                    <i class="glyphicon glyphicon-wrench"> </i>
+                    @Html.DisplayName("ตรวจสอบ")
+                </center>
+            </th>
+            <th></th>
+
+        </tr>
+
+        @foreach (var item in Model)
+
+        {
+
+            <tr>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.quotationNo)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.dayindate)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.useroffer)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.coopName)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.listorder)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.amount)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.salepricesumvat)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.profitaftersale)
+                    </center>
+                </td>
+
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.status)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayName("")
+                    </center>
+                </td>
+            </tr>
+        }
+
+    </table>
+<br>
+
+
+
