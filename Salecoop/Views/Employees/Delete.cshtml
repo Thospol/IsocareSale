@@ -5,100 +5,101 @@
 }
 <br>
 <br>
-<h2>ลบข้อมูลพนักงาน</h2>
+<center><h2>ลบข้อมูลพนักงาน</h2></center>
 
-<h3>คุณต้องการลบพนักงาน คนนี้จริงหรือ?</h3>
-<div>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            <i class="glyphicon glyphicon-user"> </i>
-            @Html.DisplayName("ชื่อจริง")
-        </dt>
+<center><h3>คุณต้องการลบพนักงาน คนนี้จริงหรือ?</h3></center>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                <i class="glyphicon glyphicon-user"> </i>
+                @Html.DisplayName("ชื่อจริง")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Firstname)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Firstname)
+            </dd>
 
-        <dt>
-            <i class="glyphicon glyphicon-user"> </i>
-            @Html.DisplayName("นามสกุล")
-        </dt>
+            <dt>
+                <i class="glyphicon glyphicon-user"> </i>
+                @Html.DisplayName("นามสกุล")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Lastname)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Lastname)
+            </dd>
 
-        <dt>
-            <i class="glyphicon glyphicon-user"> </i>
-            @Html.DisplayName("ชื่อผู้ใช้งาน")
-        </dt>
+            <dt>
+                <i class="glyphicon glyphicon-user"> </i>
+                @Html.DisplayName("ชื่อผู้ใช้งาน")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Username)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Username)
+            </dd>
 
-        <dt>
-            <i class="glyphicon glyphicon-lock"> </i>
-            @Html.DisplayName("รหัสผ่าน")
-        </dt>
+            <dt>
+                <i class="glyphicon glyphicon-lock"> </i>
+                @Html.DisplayName("รหัสผ่าน")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Password)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
 
-        <dt>
-            <i class="glyphicon glyphicon-credit-card"> </i>
-            @Html.DisplayName("บัตรประชาชน")
-        </dt>
+            <dt>
+                <i class="glyphicon glyphicon-credit-card"> </i>
+                @Html.DisplayName("บัตรประชาชน")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Idcard)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Idcard)
+            </dd>
 
-        <dt>
-            <i class="glyphicon glyphicon-envelope"> </i>
-            @Html.DisplayName("อีเมลล์")
-        </dt>
+            <dt>
+                <i class="glyphicon glyphicon-envelope"> </i>
+                @Html.DisplayName("อีเมลล์")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
 
-        <dt>
-            <i class="glyphicon glyphicon-earphone"> </i>
-            @Html.DisplayName("เบอร์โทร")
-        </dt>
+            <dt>
+                <i class="glyphicon glyphicon-earphone"> </i>
+                @Html.DisplayName("เบอร์โทร")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Tel)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Tel)
+            </dd>
 
-        <dt>
-            <i class="glyphicon glyphicon-education"> </i>
-            @Html.DisplayName("ตำแหน่ง")
-        </dt>
+            <dt>
+                <i class="glyphicon glyphicon-education"> </i>
+                @Html.DisplayName("ตำแหน่ง")
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Position)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Position)
+            </dd>
 
-    </dl>
+        </dl>
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="ลบ" class="btn btn-success" />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="ลบ" class="btn btn-success" />
 
+                </div>
             </div>
-        </div>
-       
-    }
-</div>
-<div>
-    <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Index","Employees")'">
-        ย้อนกลับ
-        <span class="glyphicon glyphicon-backward"></span>
-    </button>
-</div>
+
+        }
+    </div>
+    <div>
+        <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Index","Employees")'">
+            ย้อนกลับ
+            <span class="glyphicon glyphicon-backward"></span>
+        </button>
+    </div>

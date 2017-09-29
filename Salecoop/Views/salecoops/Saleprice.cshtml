@@ -5,93 +5,93 @@
 }
 <br>
 <br>
-<h2>ข้อมูลการซื้อขายด้านราคา</h2>
+<center><h2>ข้อมูลการซื้อขายด้านราคา</h2></center>
 
 
-<br>
-<table class="table">
-    <tr>
-
-        <th>
-            <center>
-                <i class="glyphicon glyphicon-list-alt"> </i>
-                @Html.DisplayName("เลขที่ใบเสนอราคา")
-            </center>
-        </th>
-
-        <th>
-            <center>
-                <i class="glyphicon glyphicon-calendar"> </i>
-                @Html.DisplayName("วันที่")
-            </center>
-        </th>
-        <th>
-            <center>
-                <i class="glyphicon glyphicon-user"> </i>
-                @Html.DisplayName("ราคาขายรวมVAT")
-            </center>
-        </th>
-        <th>
-            <center>
-                <i class="glyphicon glyphicon-th-list"> </i>
-                @Html.DisplayName("ราคารวมVAT")
-            </center>
-        <th>
-            <center>
-                <i class="glyphicon glyphicon-pencil"> </i>
-                @Html.DisplayName("กำไรหลังจากการขาย")
-            </center>
-        </th>
-        <th>
-            <center>
-                <i class="glyphicon glyphicon-wrench"> </i>
-                @Html.DisplayName("จัดการข้อมูล")
-            </center>
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+    <br>
+    <table class="table">
         <tr>
-            <td>
-                <center>
-                    @Html.DisplayFor(modelItem => item.quotationNo)
-                </center>
-            </td>
-            <td>
-                <center>
-                    @Html.DisplayFor(modelItem => item.dayindate)
-                </center>
-            </td>
-            <td>
-                <center>
-                    @Html.DisplayFor(modelItem => item.salepricesumvat)
-                </center>
-            </td>
-            <td>
-                <center>
-                    @Html.DisplayFor(modelItem => item.costsumvat)
-                </center>
-            </td>
-            <td>
-                <center>
-                    @Html.DisplayFor(modelItem => item.profitaftersale)
-                </center>
-            </td>
-            <td>
-                <button class="btn btn-warning" onclick="location.href='@Url.Action("Edit","salecoops",new { id = item.idsale})'">
-                    <span class="glyphicon glyphicon-pencil"></span>
-                </button>
-                <button class="btn btn-success" style="margin-left:5px" onclick="location.href='@Url.Action("Details","salecoops",new { id = item.idsale })'">
-                    <span class="glyphicon glyphicon-list-alt"></span>
-                </button>
 
-                <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Delete","salecoops",new { id = item.idsale })'">
-                    <span class="glyphicon glyphicon-trash"></span>
-                </button>
-            </td>
+            <th>
+                <center>
+                    <i class="glyphicon glyphicon-list-alt"> </i>
+                    @Html.DisplayName("เลขที่ใบเสนอราคา")
+                </center>
+            </th>
+
+            <th>
+                <center>
+                    <i class="glyphicon glyphicon-calendar"> </i>
+                    @Html.DisplayName("วันที่")
+                </center>
+            </th>
+            <th>
+                <center>
+                    <i class="glyphicon glyphicon-user"> </i>
+                    @Html.DisplayName("ราคาขายรวมVAT")
+                </center>
+            </th>
+            <th>
+                <center>
+                    <i class="glyphicon glyphicon-th-list"> </i>
+                    @Html.DisplayName("ราคารวมVAT")
+                </center>
+            <th>
+                <center>
+                    <i class="glyphicon glyphicon-pencil"> </i>
+                    @Html.DisplayName("กำไรหลังจากการขาย")
+                </center>
+            </th>
+            <th>
+                <center>
+                    <i class="glyphicon glyphicon-wrench"> </i>
+                    @Html.DisplayName("จัดการข้อมูล")
+                </center>
+            </th>
+            <th></th>
         </tr>
-    }
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.quotationNo)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.dayindate)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.salepricesumvat)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.costsumvat)
+                    </center>
+                </td>
+                <td>
+                    <center>
+                        @Html.DisplayFor(modelItem => item.profitaftersale)
+                    </center>
+                </td>
+                <td>
+                    <button class="btn btn-warning" onclick="location.href='@Url.Action("Edit","salecoops",new { id = item.idsale})'">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                    <button class="btn btn-success" style="margin-left:5px" onclick="location.href='@Url.Action("Details","salecoops",new { id = item.idsale })'">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                    </button>
+
+                    <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Delete","salecoops",new { id = item.idsale })'">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </td>
+            </tr>
+        }
+
+    </table>
