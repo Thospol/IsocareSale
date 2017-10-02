@@ -3,8 +3,8 @@
 @{
     ViewBag.Title = "Index";
 }
-<br>
-<br>
+
+<center><img src="~/Content/img/member/membersisocare.png" alt="Avatar" width="200" height="200"></center>
 <center><h2>ข้อมูลพนักงาน</h2></center>
 
     <div class="col-md-12" style="margin-top:15px">
@@ -49,7 +49,11 @@
                     @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "ค้นหา", @style = "margin-top:15px" })
 
                 </div>
-                <input type="submit" value="ค้นหา" class="btn btn-success" style="margin-left:10px; margin-top:15px" />
+                <button type="submit" class="btn btn-success" style="margin-left:10px; margin-top:15px" >
+                    <i class="glyphicon glyphicon-search"> </i>
+                    ค้นหา
+                </button>
+              <!-- <input type="submit" value="ค้นหา" class="btn btn-success" style="margin-left:10px; margin-top:15px" /> --> 
             </p>
                     }
         <button class="btn btn-primary" style="margin-left:5px" onclick="location.href='@Url.Action("Create", "Employees")'">

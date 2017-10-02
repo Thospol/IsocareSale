@@ -12,6 +12,7 @@ namespace Salecoop.Models
         public int idsale { get; set; }
         [Required(ErrorMessage = "กรุณากรอกข้อมูล เลขที่ใบเสนอราคา")]
         public string quotationNo { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime dayindate { get; set; }
         [Required(ErrorMessage = "กรุณากรอกข้อมูล ผู้เสนอราคา")]
         public string useroffer { get; set; }

@@ -240,3 +240,4 @@ C:\Users\MPMASTER\Documents\IsocareSale\Salecoop\obj\Debug\Salecoop.csproj.Gener
 C:\Users\MPMASTER\Documents\IsocareSale\Salecoop\obj\Debug\Salecoop.dll
 C:\Users\MPMASTER\Documents\IsocareSale\Salecoop\obj\Debug\Salecoop.pdb
 C:\Users\MPMASTER\Documents\IsocareSale\Salecoop\bin\Rotativa.dll
+C:\Users\MPMASTER\Documents\IsocareSale\Salecoop\obj\Debug\Salecoop.Migrations.InitialCreate2.resources

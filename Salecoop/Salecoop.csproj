@@ -180,6 +180,10 @@
     <Compile Include="Migrations\201709280719226_Initial1.Designer.cs">
       <DependentUpon>201709280719226_Initial1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710020147082_InitialCreate2.cs" />
+    <Compile Include="Migrations\201710020147082_InitialCreate2.Designer.cs">
+      <DependentUpon>201710020147082_InitialCreate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeesController.cs" />
@@ -200,6 +204,8 @@
     <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\normalize.css" />
     <Content Include="Content\img\cashcut.png" />
+    <Content Include="Content\img\commerce.png" />
+    <Content Include="Content\img\homeisocare.png" />
     <Content Include="Content\img\isocare2cut.png" />
     <Content Include="Content\img\isocare_slide01.jpg" />
     <Content Include="Content\img\isocare_slide04.jpg" />
@@ -207,10 +213,23 @@
     <Content Include="Content\img\isocare_slide107.jpg" />
     <Content Include="Content\img\isocare_slide108.jpg" />
     <Content Include="Content\img\mapisocare.png" />
+    <Content Include="Content\img\member\delete.png" />
+    <Content Include="Content\img\member\membersisocare.png" />
+    <Content Include="Content\img\member\plus.png" />
+    <Content Include="Content\img\member\sitting.png" />
+    <Content Include="Content\img\member\userview.png" />
     <Content Include="Content\img\people2.png" />
     <Content Include="Content\img\pic1.jpg" />
     <Content Include="Content\img\pic2.jpg" />
     <Content Include="Content\img\pic3.jpg" />
+    <Content Include="Content\img\salecart\add-to-cart-dark.png" />
+    <Content Include="Content\img\salecart\commerce.png" />
+    <Content Include="Content\img\salecart\PRICE.png" />
+    <Content Include="Content\img\salecart\remove-from-cart-dark.png" />
+    <Content Include="Content\img\salecart\Shopping-Cart-DETAIL.png" />
+    <Content Include="Content\img\salecart\shopping_cart_up.png" />
+    <Content Include="Content\img\Shopping-Cart-4.png" />
+    <Content Include="Content\img\Shopping-Cart-DETAIL.png" />
     <Content Include="Content\isocare2.png" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
@@ -278,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709280719226_Initial1.resx">
       <DependentUpon>201709280719226_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710020147082_InitialCreate2.resx">
+      <DependentUpon>201710020147082_InitialCreate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
