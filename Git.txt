@@ -1,0 +1,21 @@
+﻿-----GIT-----
+GIT add
+GIT commit -m "you enter massage please!!!"
+GIT status
+GIT diff
+GIT log
+GIT branch
+git branch filename //สร้างไฟล์Branchใหม่
+GIT checkout With filename
+GIT reset filename //เวลาเผลอลบไปแล้ว แล้วก็ยังไป add เข้าสู่ staged แล้ว ก็ต้องใช้ ถ้าต้องการกู้คืนfileใช้มัน
+git reset --soft HEAD~1 //revert to commit ล่าสุด
+GIT checkout With branchname
+git remove --cached filename //ลบไฟล์ออกจากtrack
+//เวลาเพื่อไฟล์ไปไหม่ให้ ใช้ GIT add filename และตามด้วย GIT commit -m "you enter massage please!!!"
+//การใช้ GIT merge เวลาต้องการรวมสิ่งที่ Branchออกไปให้ใช้มันโดยจะต้อง
+GIT checkout master
+GIT merge filebranchname
+----------------------------------
+git branch -d branch_name             //ลบbranch
+git branch -d create_new_page
+---------------------------------
