@@ -10,64 +10,88 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 
     <title>@ViewBag.Title - การซื้อขาย โปรแกรมสหกรณ์ - ไอโซแคร์ซิสเต็มส์ จำกัด </title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-   
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <style>
+        ggg {
+            font-size: 150%;
+        }
+
+        gg {
+            font-size: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header" style="font-family: 'Prompt', sans-serif;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
-                    <img class="pull-left" src="~/Content/img/homeisocare.png" style="width:40px; margin-right:10px; margin-top:5px" />
-                    @Html.ActionLink("การซื้อขาย - สหกรณ์ออมทรัพย์", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            
-                </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    @if (Session["UserName"] != null) { 
-                    <li>@Html.ActionLink("เพิ่มการซื้อขาย", "Create", "salecoops")</li>
-                    <li>@Html.ActionLink("รายการซื้อขาย", "Index", "salecoops")</li>
-                    <li>@Html.ActionLink("ซื้อขายด้านราคา", "Saleprice", "salecoops")</li>
-                    <li>@Html.ActionLink("ตรวจสอบพนักงาน", "Index", "Employees")</li>
-                    }
-                    else {
-                    <li>@Html.ActionLink("หน้าหลัก", "Index", "Home")</li>
-                    <li>@Html.ActionLink("เกี่ยวกับ", "About", "Home")</li>
-                    <li>@Html.ActionLink("ติดต่อ", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("รายการขาย", "ViewSale", "salecoops")</li>
-                    }
-                </ul>
-                <ul class="nav navbar-nav navbar-right ">
+                <img class="pull-left" src="~/Content/img/isc.png" style="width:40px; margin-right:10px; margin-top:5px " />
+                <ggg>@Html.ActionLink("การซื้อขาย - สหกรณ์ออมทรัพย์", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</ggg>
+            </div>
+            <div class="navbar-collapse collapse" style="font-family: 'Prompt', sans-serif;">
+                <gg>
+                    <ul class="nav navbar-nav">
+                        @if (Session["UserName"] != null)
+                        {
+
+                            <li>@Html.ActionLink("| เพิ่มการซื้อขาย", "Create", "salecoops")</li>
+                            <li>@Html.ActionLink("| รายการซื้อขาย", "Index", "salecoops")</li>
+                            <li>@Html.ActionLink("| ซื้อขายด้านราคา", "Saleprice", "salecoops")</li>
+                            <li>@Html.ActionLink("| ตรวจสอบพนักงาน", "Index", "Employees")</li>
+                        }
+                        else
+                        {
+
+                            <li>@Html.ActionLink("| หน้าหลัก", "Index", "Home")</li>
+                            <li>@Html.ActionLink("| เกี่ยวกับ", "About", "Home")</li>
+                            <li>@Html.ActionLink("| ติดต่อ", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("| รายการขาย", "ViewSale", "salecoops")</li>
+                        }
+                    </ul>
+                </gg>
+                <ul class="nav navbar-nav navbar-right " style="font-family: 'Prompt', sans-serif;">
 
                     @if (Session["UserName"] != null && Session["Firstname"] != null && Session["Lastname"] != null)
                     {
-                        <li>@Html.ActionLink("ยินดีต้อนรับ คุณ " + @Session["Firstname"].ToString() +" "+ @Session["Lastname"].ToString(), "Index", "Home") 
+                        <li>
+                            @Html.ActionLink("ยินดีต้อนรับ คุณ " + @Session["Firstname"].ToString(), "Index", "Home")
                         </li>
-                        <li><button class="btn btn-success" style="height:50px" onclick="location.href='@Url.Action("Logout","Home")'">ออกจากระบบ</button></li>
+                                @*<li><button class="btn btn-success" style="height:50px" onclick="location.href='@Url.Action("Logout","Home")'">ออกจากระบบ</button></li>*@
+                                <li>@Html.ActionLink("| ออกจากระบบ", "Logout", "Home")</li>
                     }
                     else
                     {
-                    <li> <button class="btn btn-success" style="height:50px" onclick="location.href='@Url.Action("Login","Home")'">เข้าสู่ระบบ</button></li>
-                        }
+                        @*<li> <button class="btn btn-success" style="height:50px" onclick="location.href='@Url.Action("Login","Home")'">เข้าสู่ระบบ</button></li>*@
+                        <li>@Html.ActionLink("| เข้าสู่ระบบ", "Login", "Home")</li>
+
+                    }
+                </ul>
 
 
-</ul>
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now - การซื้อขาย สหกรณ์ออมทรัพย์</p>
+            <div class="blog-info text-center" style="font-family: 'Prompt', sans-serif;">
+                <p>&copy; @DateTime.Now - การซื้อขาย สหกรณ์ออมทรัพย์</p>
+                <p>
+                    <center><a href="https://github.com/Thospol" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;<a href="https://medium.com" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>&nbsp;<a href="https://www.facebook.com/mud.single" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;<a href="https://twitter.com/devahoy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;<a href="/about"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></center></li>
+                </p>
+            </div>
         </footer>
     </div>
 
@@ -75,4 +99,5 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
+
 </html>

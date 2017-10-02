@@ -8,7 +8,7 @@
 
 <div  align="center" ><img src="~/Content/img/people2.png" alt="Avatar" class="avatar" width="150" height="150"></div>
 
-<div align="center"><h2>ลงชื่อเข้าใช้</h2></div>
+<div align="center"><h2 style="align-content:center; font-family: 'Prompt', sans-serif;">ลงชื่อเข้าใช้</h2></div>
 <br>
 <head>
 @ViewBag.Javascript
@@ -22,7 +22,7 @@
 
 
 
-        <div align="center">
+        <div align="center" style="align-content:center; font-family: 'Prompt', sans-serif;">
 
             @Html.Label("Username", htmlAttributes: new { @class = "control-label" })
             @Html.TextBox("username", ViewBag.CurrentFilter as string, new { @class = "form-control", @placeholder = "Username", @style = "text-align: center" })

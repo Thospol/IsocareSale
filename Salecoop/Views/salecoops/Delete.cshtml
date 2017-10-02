@@ -5,12 +5,12 @@
 }
 <br>
 <center><img src="~/Content/img/salecart/remove-from-cart-dark.png" alt="Avatar" width="100" height="100"></center>
-<center><h2>ลบรายละเอียดการซื้อขาย</h2></center>
+<center><h2 style="align-content:center; font-family: 'Prompt', sans-serif;">ลบรายละเอียดการซื้อขาย</h2></center>
 
-   <center> <h3>คุณต้องการลบรายการนี้จริงหรือไม่ ?</h3></center>
+   <center> <h3 style="align-content:center; font-family: 'Prompt', sans-serif;">คุณต้องการลบรายการนี้จริงหรือไม่ ?</h3></center>
     <div>
         <hr />
-        <dl class="dl-horizontal">
+        <dl class="dl-horizontal" style="align-content:center; font-family: 'Prompt', sans-serif;">
             <dt>
                 <i class="glyphicon glyphicon-list-alt"> </i>
                 @Html.DisplayName("เลขที่ใบเสนอราคา")
@@ -117,7 +117,7 @@
             @Html.AntiForgeryToken()
 
             <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
+                <div class="col-md-offset-2 col-md-10" style="align-content:center; font-family: 'Prompt', sans-serif;">
                     <input type="submit" value="ลบ" class="btn btn-success" />
 
                 </div>
@@ -127,7 +127,7 @@
         }
     </div>
     <div>
-        <button class="btn btn-danger" style="margin-left:5px" onclick="location.href='@Url.Action("Index","salecoops")'">
+        <button class="btn btn-danger" style="margin-left:5px; align-content:center; font-family: 'Prompt', sans-serif;" onclick="location.href='@Url.Action("Index","salecoops")'">
             ย้อนกลับ
             <span class="glyphicon glyphicon-backward"></span>
         </button>

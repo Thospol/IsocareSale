@@ -203,9 +203,17 @@
     <Content Include="Content\css\component.css" />
     <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\normalize.css" />
+    <Content Include="Content\css\themify-icons.css" />
     <Content Include="Content\img\cashcut.png" />
     <Content Include="Content\img\commerce.png" />
     <Content Include="Content\img\homeisocare.png" />
+    <Content Include="Content\img\Home\azure-sql-database.png" />
+    <Content Include="Content\img\Home\database.png" />
+    <Content Include="Content\img\Home\qrcode.jpg" />
+    <Content Include="Content\img\Home\qrcoop.png" />
+    <Content Include="Content\img\Home\sql.png" />
+    <Content Include="Content\img\Home\thaicoop_photo01.jpg" />
+    <Content Include="Content\img\Home\user.png" />
     <Content Include="Content\img\isocare2cut.png" />
     <Content Include="Content\img\isocare_slide01.jpg" />
     <Content Include="Content\img\isocare_slide04.jpg" />
@@ -224,6 +232,7 @@
     <Content Include="Content\img\pic3.jpg" />
     <Content Include="Content\img\salecart\add-to-cart-dark.png" />
     <Content Include="Content\img\salecart\commerce.png" />
+    <Content Include="Content\img\salecart\if_facebook_square_107117.png" />
     <Content Include="Content\img\salecart\PRICE.png" />
     <Content Include="Content\img\salecart\remove-from-cart-dark.png" />
     <Content Include="Content\img\salecart\Shopping-Cart-DETAIL.png" />
@@ -308,6 +317,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\assets\" />
     <Folder Include="Content\font\" />
     <Folder Include="Content\js\" />
   </ItemGroup>

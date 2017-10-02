@@ -18,6 +18,14 @@ namespace Salecoop.Controllers
         private SalecoopContext db = new SalecoopContext();
         public ActionResult Index()
         {
+              SalecoopContext db = new SalecoopContext();
+            var listsale = (from c in db.salecoops select c).Count();
+            ViewBag.Saleping = listsale;
+            Console.Write(ViewBag.Saleping);
+
+            var listemp = (from c in db.Employees select c).Count();
+            ViewBag.Empping = listemp;
+            Console.Write(ViewBag.Saleping);
             return View();
         }
 
@@ -67,6 +75,7 @@ namespace Salecoop.Controllers
             Session.Clear();
             return RedirectToAction("index");
         }
+       
 
 
 

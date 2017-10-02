@@ -13,6 +13,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 <div id="myCarousel" class="carousel slide col-md-12" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -82,23 +83,25 @@
 <br>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    <div class="col-md-4" style="align-content:center; font-family: 'Prompt', sans-serif;">
+        <center><h3>บริษัท ไอโซแคร์ ซิสเต็มส์ จำกัด</h3></center>
+        <center><p><img src="~/Content/img/Home/thaicoop_photo01.jpg" width="200" height="100" /></p></center>
+    <p><center>55/127 หมู่ 2 แขวงลาดยาว เขตจตุจักร กรุงเทพมหานคร 10900 โทร. 02-158-1223-4, 06-3789-2888, 06-3789-1888, 06-3789-0888, 08-1355-2557</center></p>
+    <p><center><a  class="btn btn-success" href="http://www.isocare.co.th/"><i class="glyphicon glyphicon-eye-open"> </i></a>&nbsp;<a  class="btn btn-primary">facebook</a></center></p>
+      
+</div>
+    <div class="col-md-4" style="align-content:center; font-family: 'Prompt', sans-serif;">
+        <center><h3>QR Code</h3></center>
+        <center><h4>เพิ่มเพื่อนในไลน์มาได้น้ะจ้ะ</h4></center>
+        
+        <center><p style="text-align: center;"><img src="~/Content/img/Home/qrcoop.png" width="180" height="180"></p></center>
+        <!--<p><center><a class="btn btn-success" href="http://www.isocare.co.th/"><i class="glyphicon glyphicon-eye-open"> </i></a></center></p> -->  
+</div>
+    <div class="col-md-4" style="align-content:center; font-family: 'Prompt', sans-serif;">
+        <center><h2>ข้อมูลเว็บแอปพลิเคชั่น</h2></center>
+        <center><p><img src="~/Content/img/Home/azure-sql-database.png" width="60" height="65" /></p></center>
+       <center><p><img src="~/Content/img/Home/user.png" width="30" height="30" /><b> จำนวนพนักงานในระบบ</b>  @Html.Raw(ViewBag.Empping) @Html.Label("คน")</p></center>
+        <center><p><img src="~/Content/img/homeisocare.png" width="40" height="45" /><b> จำนวนรายการซื้อขายในระบบ</b>  @Html.Raw(ViewBag.Saleping) @Html.Label("รายการ")</p></center>
+   
+</div>
 </div>
